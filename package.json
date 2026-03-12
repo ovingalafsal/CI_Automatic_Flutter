@@ -1,0 +1,29 @@
+{
+  "name": "cx_customer_app_flutter",
+  "version": "1.0.0",
+  "description": "CI_Automatic_Flutter",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ovingalafsal/CI_Automatic_Flutter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ovingalafsal/CI_Automatic_Flutter/issues"
+  },
+  "homepage": "https://github.com/ovingalafsal/CI_Automatic_Flutter#readme",
+  "devDependencies": {
+    "husky": "^9.1.7"
+  }
+}

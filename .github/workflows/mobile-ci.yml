@@ -1,0 +1,29 @@
+name: Mobile CI
+
+on: [push, pull_request]
+
+jobs:
+  mobile-pipeline:
+    runs-on: macos-latest
+
+    steps:
+
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          brew install swiftlint
+          npm install
+
+      - name: Lint
+        run: fastlane lint
+
+      - name: Test
+        run: fastlane test
+
+      - name: Coverage
+        run: echo "Coverage threshold 80"
+
+      - name: AI Diagnostics
+        if: failure()
+        run: python3 .practice-tools/ai_triage.py
